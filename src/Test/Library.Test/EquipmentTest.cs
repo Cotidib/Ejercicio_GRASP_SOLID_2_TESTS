@@ -15,6 +15,7 @@ namespace Library.Test
         [SetUp]
         public void Setup()
         {
+            //Arrange
             this.equipment = new Equipment("Esto es una descripción", 50.0); 
         }
 
