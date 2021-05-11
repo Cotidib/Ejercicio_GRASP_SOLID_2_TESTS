@@ -18,6 +18,7 @@ namespace Library.Test
         [SetUp]
         public void Setup()
         {
+            //ARRANGE
             this.product = new Product("Helado", 40);
             this.quantity = 10;
             this.equipment = new Equipment("Heladera", 50);
@@ -30,6 +31,7 @@ namespace Library.Test
         public void StepCostIsDouble() 
         // Test para corroborar que el método devuelva un valor del tipo double.
         {
+           //Assert
            Assert.IsInstanceOf(typeof(double), step.GetStepCost());
         }
 

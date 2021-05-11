@@ -43,6 +43,7 @@ namespace Library.Test
         public void DescriptionIsString()
         // Validar que la descripción sea del tipo string.
         {
+            //Assert
             Assert.IsInstanceOf(typeof(string), equipment.Description);
         }
 
@@ -50,6 +51,7 @@ namespace Library.Test
         public void DescriptionNotEmpty()
         // Verifica que la descripción no esté vacía.
         {
+            //Assert
             Assert.IsNotEmpty(equipment.Description);
         }
 
@@ -57,6 +59,7 @@ namespace Library.Test
         public void HourlyCostIsDouble()
         // Verifica que el HourlyCost sea del tipo double.
         {
+            //Assert
             Assert.IsInstanceOf(typeof(double), equipment.HourlyCost);
         }
 
@@ -64,6 +67,7 @@ namespace Library.Test
         public void HourlyCostNotNull()
         // Verifica que HourlyCost no sea nulo.
         {
+            //Assert
             Assert.IsNotNull(equipment.HourlyCost);
         }
     }
