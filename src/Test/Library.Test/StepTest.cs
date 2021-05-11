@@ -39,10 +39,8 @@ namespace Library.Test
         public void CorrectStepCost() 
         // Test para verificar que el cálculo del costo sea correcto.
         {
-            // ACT
-            double calculo = (product.UnitCost * this.quantity) + (equipment.HourlyCost * this.time);
             //ASSERT
-            Assert.AreEqual(calculo, step.GetStepCost());
+            Assert.AreEqual(3400, step.GetStepCost());
         }
 
         [Test]
