@@ -11,7 +11,6 @@ namespace Library.Test
     public class RecipeTest
     {
 
-        private IList<Step> steps;
         private Product FinalProduct;
         private Recipe recipe;
         private Product product;
@@ -43,6 +42,17 @@ namespace Library.Test
             recipe.FinalProduct = FinalProduct;
             //ASSERT
             Assert.IsNotNull(recipe.GetTextToPrint());
+        }
+        
+        [Test]
+        public void GetTextToPrintIsString()
+        {
+            //Test para verificar que la salida de Get Text To Print es un string.
+            //ACT
+            recipe.AddStep(step);
+            recipe.FinalProduct = FinalProduct;
+            //ASSERT 
+            Assert.IsInstanceOf(typeof(string), recipe.GetTextToPrint());
         }
 
         [Test]
